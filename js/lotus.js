@@ -246,12 +246,12 @@ function draw_layer(layer, c, s, deg, fade){
 function draw() {
   frameRate(60);
   background (0);
-  if (screen && screen.width > 480) {
   // if (!navigator.onLine) {
   translate(width/2, height/2);
   angleMode(DEGREES);
   noStroke();
   rotate((millis()/800));
+  scale(width/1440);
   let inter = 380;
   if (millis() - startTime >= inter && millis() - startTime < inter * 14) {
     draw_layer(layer6, '#010A5A', (millis()-startTime)/6.7/inter, 0, fade01);
@@ -633,7 +633,6 @@ function draw() {
   // c = color ('#ffcd00')
   // c.setAlpha(96);
   // layer1(c);
-  }
 }
 
 function windowResized() {
