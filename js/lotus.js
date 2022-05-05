@@ -247,7 +247,7 @@ function draw() {
   angleMode(DEGREES);
   noStroke();
   rotate((millis()/800));
-  let inter = 350;
+  let inter = 380;
   if (millis() - startTime >= inter && millis() - startTime < inter * 14) {
     draw_layer(layer6, '#010A5A', (millis()-startTime)/6.7/inter, 0, fade01);
     if (fade01 === 0) fadeAmount = 180/(inter * 14 * 0.001 * 60);
