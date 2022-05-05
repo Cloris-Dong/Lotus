@@ -49,7 +49,7 @@ function preload(){
 }
 
 function canvasPressed(){
-  wave.play();
+  wave.loop();
 }
 function setup() {
   let cnv = createCanvas(innerWidth, innerHeight);
