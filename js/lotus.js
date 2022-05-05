@@ -45,7 +45,7 @@ let randCol;
 var wave;
 
 function preload(){
-  wave = loadSound('assets/wave-trim01.mp3');
+  wave = loadSound('assets/wave-trim01_02.mp3');
 }
 
 function canvasPressed(){
