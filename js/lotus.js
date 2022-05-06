@@ -44,7 +44,7 @@ let myColors = ['#010A5A', '#0B2570', '#215795','#2D6FA5', '#4095C2', '#4EB2D4',
 var wave;
 
 function preload(){
-  wave = loadSound('assets/wave03.mp3');
+  wave = loadSound('assets/wave03 loop rain.mp3');
 }
 
 function canvasPressed(){
