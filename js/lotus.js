@@ -44,7 +44,7 @@ let myColors = ['#010A5A', '#0B2570', '#215795','#2D6FA5', '#4095C2', '#4EB2D4',
 var wave;
 
 function preload(){
-  wave = loadSound('assets/wave03 loop rain.mp3');
+  wave = loadSound('assets/wave04 loop.mp3');
 }
 
 function canvasPressed(){
@@ -55,6 +55,25 @@ function canvasPressed(){
     wave.stop();
   }
 }
+
+
+// window.onload=function(){
+//   document.getElementById("linkid").click();
+// };
+//
+// function doSomething(){
+//   alert("Click!")
+// }
+
+// function ClickConnect(){
+//     console.log("Clicked on connect button");
+//     window.addEventListener('DOMContentLoaded', (event) => {
+//       // document.querySelector("ClickMe").click()
+//       wave.play();
+//     });
+//
+// }
+
 function setup() {
   let cnv = createCanvas(innerWidth, innerHeight);
   cnv.mousePressed(canvasPressed);
@@ -77,6 +96,7 @@ function setup() {
   fade07 = 0;
   fade08 = 0;
   fade09 = 0;
+  // ClickConnect();
  }
 
 function mousePressed(){
@@ -245,7 +265,7 @@ function draw_layer(layer, c, s, deg, fade){
 
 function draw() {
   frameRate(60);
-  background (0);
+  background ('#010102');
   // if (!navigator.onLine) {
   translate(width/2, height/2);
   angleMode(DEGREES);
