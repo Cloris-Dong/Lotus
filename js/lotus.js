@@ -43,18 +43,27 @@ var fadeAmount = 1;
 let myColors = ['#010A5A', '#0B2570', '#215795','#2D6FA5', '#4095C2', '#4EB2D4','#6EC7E1','#A1DEED'];
 var wave;
 
+const banner = document.querySelector('#banner')
+const button = document.querySelector('#banner button')
+const audio = document.querySelector('audio')
+
+button.addEventListener('click', () => {
+  audio.play()
+  banner.style.display = 'none'
+})
+
 function preload(){
   wave = loadSound('assets/wave04 loop.mp3');
 }
 
-function canvasPressed(){
-  if (!wave.isPlaying()){
-    wave.playMode('restart');
-    wave.loop();
-    }else{
-    wave.stop();
-  }
-}
+// function canvasPressed(){
+//   if (!wave.isPlaying()){
+//     wave.playMode('restart');
+//     wave.loop();
+//     }else{
+//     wave.stop();
+//   }
+// }
 
 
 // window.onload=function(){
@@ -76,7 +85,7 @@ function canvasPressed(){
 
 function setup() {
   let cnv = createCanvas(innerWidth, innerHeight);
-  cnv.mousePressed(canvasPressed);
+  // cnv.mousePressed(canvasPressed);
   fade = 180;
   fade1 = 180;
   fade2 =180;
@@ -99,11 +108,11 @@ function setup() {
   // ClickConnect();
  }
 
-function mousePressed(){
-    if (!(wave.isPlaying())){
-      wave.play();
-    }
-}
+// function mousePressed(){
+//     if (!(wave.isPlaying())){
+//       wave.play();
+//     }
+// }
 
  function layer1(c, fade){
    // noFill();

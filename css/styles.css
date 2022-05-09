@@ -12,3 +12,21 @@ html, body {
 canvas {
  display: block;
 }
+
+#banner {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 99999;
+  width: 100vw;
+  height: 100vh;
+  text-align:center;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  color:white;
+}
