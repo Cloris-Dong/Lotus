@@ -216,7 +216,7 @@ function draw() {
   scale(width/1440);
   let inter = 380;
   if (millis() - startTime >= inter && millis() - startTime < inter * 11) {
-    draw_layer(layer6, '#010A5A', (millis()-startTime)/6.7/inter, 0, fade01);
+    draw_layer(layer6, '#010A5A', (millis()-startTime)/5.5/inter, 0, fade01);
     if (fade01 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade01 >= 180) fadeAmount = 0;
     fade01 += fadeAmount;
@@ -226,8 +226,8 @@ function draw() {
     timer[1] = millis();
   }
   if (millis() - startTime >= inter * 11 && millis() - startTime < inter * 11 * 2) {
-    draw_layer(layer6, '#010A5A', timer[0]/6.7/inter, 0, fade);
-    draw_layer(layer9, '#0B2570', ((millis()-timer[1])/6.7/inter) * 0.8, 0, fade02);
+    draw_layer(layer6, '#010A5A', timer[0]/5.5/inter, 0, fade);
+    draw_layer(layer9, '#0B2570', ((millis()-timer[1])/5.5/inter) * 0.8, 0, fade02);
     if (fade02 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade02 >= 180) fadeAmount = 0;
     fade02 += fadeAmount;
@@ -238,9 +238,9 @@ function draw() {
   }
 
   if (millis() - startTime >= inter * 11 * 2 && millis() - startTime < inter * 11 * 3) {
-    draw_layer(layer6, '#010A5A', timer[0]/6.7/inter, 0, fade);
-    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/6.7/inter) * 0.8, 0, fade);
-    draw_layer(layer10, '#215795', ((millis()-timer[3])/6.7/inter) * pow(0.8, 2), 180, fade03);
+    draw_layer(layer6, '#010A5A', timer[0]/5.5/inter, 0, fade);
+    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/5.5/inter) * 0.8, 0, fade);
+    draw_layer(layer10, '#215795', ((millis()-timer[3])/5.5/inter) * pow(0.8, 2), 180, fade03);
     if (fade03 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade03 >= 180) fadeAmount = 0;
     fade03 += fadeAmount;
@@ -251,12 +251,12 @@ function draw() {
   }
 
   if (millis() - startTime >= inter * 11 * 3 && millis() - startTime < inter * 11 * 4) {
-    draw_layer(layer6, '#010A5A', timer[0]/6.7/inter, 0, fade);
-    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/6.7/inter) * 0.8, 0, fade);
-    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/6.7/inter) * pow(0.8, 2), 180, fade);
+    draw_layer(layer6, '#010A5A', timer[0]/5.5/inter, 0, fade);
+    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/5.5/inter) * 0.8, 0, fade);
+    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/5.5/inter) * pow(0.8, 2), 180, fade);
     push();
     rotate(1.25 * millis()/800);
-    draw_layer(layer7, '#2D6FA5', ((millis()-timer[5])/6.7/inter) * pow(0.8, 3), 180, fade04);
+    draw_layer(layer7, '#2D6FA5', ((millis()-timer[5])/5.5/inter) * pow(0.8, 3), 180, fade04);
     if (fade04 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade04 >= 180) fadeAmount = 0;
     fade04 += fadeAmount;
@@ -268,14 +268,14 @@ function draw() {
   }
 
   if (millis() - startTime >= inter * 11 * 4 && millis() - startTime < inter * 11 * 5) {
-    draw_layer(layer6, '#010A5A', timer[0]/6.7/inter, 0, fade);
-    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/6.7/inter) * 0.8, 0, fade);
-    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/6.7/inter) * pow(0.8, 2), 180, fade);
+    draw_layer(layer6, '#010A5A', timer[0]/5.5/inter, 0, fade);
+    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/5.5/inter) * 0.8, 0, fade);
+    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/5.5/inter) * pow(0.8, 2), 180, fade);
     push();
     rotate(1.25 * millis()/800);
-    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/6.7/inter) * pow(0.8, 3), 180, fade);
+    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/5.5/inter) * pow(0.8, 3), 180, fade);
     pop();
-    draw_layer(layer5, '#4095C2', ((millis()-timer[7])/6.7/inter) * pow(0.8, 4), 0, fade05);
+    draw_layer(layer5, '#4095C2', ((millis()-timer[7])/5.5/inter) * pow(0.8, 4), 0, fade05);
     if (fade05 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade05 >= 180) fadeAmount = 0;
     fade05 += fadeAmount;
@@ -286,15 +286,15 @@ function draw() {
   }
 
   if (millis() - startTime >= inter * 11 * 5 && millis() - startTime < inter * 11 * 6) {
-    draw_layer(layer6, '#010A5A', timer[0]/6.7/inter, 0, fade);
-    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/6.7/inter) * 0.8, 0, fade);
-    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/6.7/inter) * pow(0.8, 2), 180, fade);
+    draw_layer(layer6, '#010A5A', timer[0]/5.5/inter, 0, fade);
+    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/5.5/inter) * 0.8, 0, fade);
+    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/5.5/inter) * pow(0.8, 2), 180, fade);
     push();
     rotate(1.25 * millis()/800);
-    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/6.7/inter) * pow(0.8, 3), 180, fade);
+    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/5.5/inter) * pow(0.8, 3), 180, fade);
     pop();
-    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/6.7/inter) * pow(0.8, 4), 0, fade);
-    draw_layer(layer3, '#4EB2D4', ((millis()-timer[9])/6.7/inter) * pow(0.8, 6), 0, fade06);
+    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/5.5/inter) * pow(0.8, 4), 0, fade);
+    draw_layer(layer3, '#4EB2D4', ((millis()-timer[9])/5.5/inter) * pow(0.8, 6), 0, fade06);
     if (fade06 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade06 >= 180) fadeAmount = 0;
     fade06 += fadeAmount;
@@ -305,16 +305,16 @@ function draw() {
   }
 
   if (millis() - startTime >= inter * 11 * 6 && millis() - startTime < inter * 11 * 7) {
-    draw_layer(layer6, '#010A5A', timer[0]/6.7/inter, 0, fade);
-    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/6.7/inter) * 0.8, 0, fade);
-    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/6.7/inter) * pow(0.8, 2), 180, fade);
+    draw_layer(layer6, '#010A5A', timer[0]/5.5/inter, 0, fade);
+    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/5.5/inter) * 0.8, 0, fade);
+    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/5.5/inter) * pow(0.8, 2), 180, fade);
     push();
     rotate(1.25 * millis()/800);
-    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/6.7/inter) * pow(0.8, 3), 180, fade);
+    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/5.5/inter) * pow(0.8, 3), 180, fade);
     pop();
-    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/6.7/inter) * pow(0.8, 4), 0, fade);
-    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/6.7/inter) * pow(0.8, 6), 0, fade);
-    draw_layer(layer4, '#6EC7E1', ((millis()-timer[11])/6.7/inter) * pow(0.8,7), 0, fade07);
+    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/5.5/inter) * pow(0.8, 4), 0, fade);
+    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/5.5/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer4, '#6EC7E1', ((millis()-timer[11])/5.5/inter) * pow(0.8,7), 0, fade07);
     if (fade07 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade07 >= 180) fadeAmount = 0;
     fade07 += fadeAmount;
@@ -325,19 +325,19 @@ function draw() {
   }
 
   if (millis() - startTime >= inter * 11 * 7 && millis() - startTime < inter * 11 * 8) {
-    draw_layer(layer6, '#010A5A', timer[0]/6.7/inter, 0, fade);
-    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/6.7/inter) * 0.8, 0, fade);
-    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/6.7/inter) * pow(0.8, 2), 180, fade);
+    draw_layer(layer6, '#010A5A', timer[0]/5.5/inter, 0, fade);
+    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/5.5/inter) * 0.8, 0, fade);
+    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/5.5/inter) * pow(0.8, 2), 180, fade);
     push();
     rotate(1.25 * millis()/800);
-    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/6.7/inter) * pow(0.8, 3), 180, fade);
+    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/5.5/inter) * pow(0.8, 3), 180, fade);
     pop();
-    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/6.7/inter) * pow(0.8, 4), 0, fade);
-    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/6.7/inter) * pow(0.8, 6), 0, fade);
-    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/6.7/inter) * pow(0.8, 7), 0, fade);
+    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/5.5/inter) * pow(0.8, 4), 0, fade);
+    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/5.5/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/5.5/inter) * pow(0.8, 7), 0, fade);
     push();
     rotate(-6 * millis()/800);
-    draw_layer(layer8, '#A1DEED', ((millis()-timer[13])/6.7/inter) * pow(0.8, 8), 180, fade08);
+    draw_layer(layer8, '#A1DEED', ((millis()-timer[13])/5.5/inter) * pow(0.8, 8), 180, fade08);
     if (fade08 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade08 >= 180) fadeAmount = 0;
     fade08 += fadeAmount;
@@ -349,23 +349,23 @@ function draw() {
   }
 
   if (millis() - startTime >= inter * 11 * 8 && millis() - startTime < inter * 11 * 9) {
-    draw_layer(layer6, '#010A5A', timer[0]/6.7/inter, 0, fade);
-    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/6.7/inter) * 0.8, 0, fade);
-    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/6.7/inter) * pow(0.8, 2), 180, fade);
+    draw_layer(layer6, '#010A5A', timer[0]/5.5/inter, 0, fade);
+    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/5.5/inter) * 0.8, 0, fade);
+    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/5.5/inter) * pow(0.8, 2), 180, fade);
     push();
     rotate(1.25 * millis()/800);
-    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/6.7/inter) * pow(0.8, 3), 180, fade);
+    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/5.5/inter) * pow(0.8, 3), 180, fade);
     pop();
-    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/6.7/inter) * pow(0.8, 4), 0, fade);
-    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/6.7/inter) * pow(0.8, 6), 0, fade);
-    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/6.7/inter) * pow(0.8, 7), 0, fade);
+    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/5.5/inter) * pow(0.8, 4), 0, fade);
+    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/5.5/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/5.5/inter) * pow(0.8, 7), 0, fade);
     push();
     rotate(-6 * millis()/800);
-    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/6.7/inter) * pow(0.8, 8), 180, fade);
+    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/5.5/inter) * pow(0.8, 8), 180, fade);
     pop();
     push();
     rotate(17 * millis()/800);
-    draw_layer(layer1, '#eac435', ((millis()-timer[15])/6.7/inter) * pow(0.8, 6), 0, fade09);
+    draw_layer(layer1, '#eac435', ((millis()-timer[15])/5.5/inter) * pow(0.8, 6), 0, fade09);
     if (fade09 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade09 >= 180) fadeAmount = 0;
     fade09 += fadeAmount;
@@ -378,161 +378,161 @@ function draw() {
 
   // transition stage
   if (millis() - startTime >= inter * 11 * 9 && millis() - startTime < inter * 11 * 9.5) {
-    draw_layer(layer6, '#010A5A', timer[0]/6.7/inter, 0, fade1);
+    draw_layer(layer6, '#010A5A', timer[0]/5.5/inter, 0, fade1);
     if (fade1<=0) fadeAmount = 0;
     if (fade1>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
     fade1 += fadeAmount;
-    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/6.7/inter) * 0.8, 0, fade);
-    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/6.7/inter) * pow(0.8, 2), 180, fade);
+    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/5.5/inter) * 0.8, 0, fade);
+    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/5.5/inter) * pow(0.8, 2), 180, fade);
     push();
     rotate(1.25 * millis()/800);
-    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/6.7/inter) * pow(0.8, 3), 180, fade);
+    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/5.5/inter) * pow(0.8, 3), 180, fade);
     pop();
-    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/6.7/inter) * pow(0.8, 4), 0, fade);
-    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/6.7/inter) * pow(0.8, 6), 0, fade);
-    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/6.7/inter) * pow(0.8, 7), 0, fade);
+    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/5.5/inter) * pow(0.8, 4), 0, fade);
+    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/5.5/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/5.5/inter) * pow(0.8, 7), 0, fade);
     push();
     rotate(-6 * millis()/800);
-    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/6.7/inter) * pow(0.8, 8), 180, fade);
+    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/5.5/inter) * pow(0.8, 8), 180, fade);
     pop();
     push();
     rotate(17 * millis()/800);
-    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/6.7/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/5.5/inter) * pow(0.8, 6), 0, fade);
     pop();
   }
 
   if (millis() - startTime >= inter * 11 * 9.5 && millis() - startTime < inter * 11 * 10.5) {
-    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/6.7/inter) * 0.8, 0, fade2);
+    draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/5.5/inter) * 0.8, 0, fade2);
     if (fade2<=0) fadeAmount = 0;
     if (fade2>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
     fade2 += fadeAmount;
-    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/6.7/inter) * pow(0.8, 2), 180, fade);
+    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/5.5/inter) * pow(0.8, 2), 180, fade);
     push();
     rotate(1.25 * millis()/800);
-    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/6.7/inter) * pow(0.8, 3), 180, fade);
+    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/5.5/inter) * pow(0.8, 3), 180, fade);
     pop();
-    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/6.7/inter) * pow(0.8, 4), 0, fade);
-    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/6.7/inter) * pow(0.8, 6), 0, fade);
-    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/6.7/inter) * pow(0.8, 7), 0, fade);
+    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/5.5/inter) * pow(0.8, 4), 0, fade);
+    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/5.5/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/5.5/inter) * pow(0.8, 7), 0, fade);
     push();
     rotate(-6 * millis()/800);
-    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/6.7/inter) * pow(0.8, 8), 180, fade);
+    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/5.5/inter) * pow(0.8, 8), 180, fade);
     pop();
     push();
     rotate(17 * millis()/800);
-    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/6.7/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/5.5/inter) * pow(0.8, 6), 0, fade);
     pop();
   }
 
   if (millis() - startTime >= inter * 11 * 10.5 && millis() - startTime < inter * 11 * 11.5) {
-    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/6.7/inter) * pow(0.8, 2), 180, fade3);
+    draw_layer(layer10, '#215795', ((timer[4]-timer[2])/5.5/inter) * pow(0.8, 2), 180, fade3);
     if (fade3<=0) fadeAmount = 0;
     if (fade3>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
     fade3 += fadeAmount;
     push();
     rotate(1.25 * millis()/800);
-    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/6.7/inter) * pow(0.8, 3), 180, fade);
+    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/5.5/inter) * pow(0.8, 3), 180, fade);
     pop();
-    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/6.7/inter) * pow(0.8, 4), 0, fade);
-    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/6.7/inter) * pow(0.8, 6), 0, fade);
-    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/6.7/inter) * pow(0.8, 7), 0, fade);
+    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/5.5/inter) * pow(0.8, 4), 0, fade);
+    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/5.5/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/5.5/inter) * pow(0.8, 7), 0, fade);
     push();
     rotate(-6 * millis()/800);
-    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/6.7/inter) * pow(0.8, 8), 180, fade);
+    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/5.5/inter) * pow(0.8, 8), 180, fade);
     pop();
     push();
     rotate(17 * millis()/800);
-    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/6.7/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/5.5/inter) * pow(0.8, 6), 0, fade);
     pop();
   }
 
   if (millis() - startTime >= inter * 11 * 11.5 && millis() - startTime < inter * 11 * 12.5) {
     push();
     rotate(1.25 * millis()/800);
-    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/6.7/inter) * pow(0.8, 3), 180, fade4);
+    draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/5.5/inter) * pow(0.8, 3), 180, fade4);
     if (fade4<=0) fadeAmount = 0;
     if (fade4>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
     fade4 += fadeAmount;
     pop();
-    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/6.7/inter) * pow(0.8, 4), 0, fade);
-    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/6.7/inter) * pow(0.8, 6), 0, fade);
-    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/6.7/inter) * pow(0.8, 7), 0, fade);
+    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/5.5/inter) * pow(0.8, 4), 0, fade);
+    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/5.5/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/5.5/inter) * pow(0.8, 7), 0, fade);
     push();
     rotate(-6 * millis()/800);
-    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/6.7/inter) * pow(0.8, 8), 180, fade);
+    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/5.5/inter) * pow(0.8, 8), 180, fade);
     pop();
     push();
     rotate(17 * millis()/800);
-    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/6.7/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/5.5/inter) * pow(0.8, 6), 0, fade);
     pop();
   }
 
   if (millis() - startTime >= inter * 11 * 12.5 && millis() - startTime < inter * 11 * 13.5) {
-    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/6.7/inter) * pow(0.8, 4), 0, fade5);
+    draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/5.5/inter) * pow(0.8, 4), 0, fade5);
     if (fade5<=0) fadeAmount = 0;
     if (fade5>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
     fade5 += fadeAmount;
-    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/6.7/inter) * pow(0.8, 6), 0, fade);
-    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/6.7/inter) * pow(0.8, 7), 0, fade);
+    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/5.5/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/5.5/inter) * pow(0.8, 7), 0, fade);
     push();
     rotate(-6 * millis()/800);
-    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/6.7/inter) * pow(0.8, 8), 180, fade);
+    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/5.5/inter) * pow(0.8, 8), 180, fade);
     pop();
     push();
     rotate(17 * millis()/800);
-    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/6.7/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/5.5/inter) * pow(0.8, 6), 0, fade);
     pop();
   }
 
   if (millis() - startTime >= inter * 11 * 13.5 && millis() - startTime < inter * 11 * 14.5) {
-    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/6.7/inter) * pow(0.8, 6), 0, fade6);
+    draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/5.5/inter) * pow(0.8, 6), 0, fade6);
     if (fade6<=0) fadeAmount = 0;
     if (fade6>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
     fade6 += fadeAmount;
-    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/6.7/inter) * pow(0.8, 7), 0, fade);
+    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/5.5/inter) * pow(0.8, 7), 0, fade);
     push();
     rotate(-6 * millis()/800);
-    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/6.7/inter) * pow(0.8, 8), 180, fade);
+    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/5.5/inter) * pow(0.8, 8), 180, fade);
     pop();
     push();
     rotate(17 * millis()/800);
-    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/6.7/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/5.5/inter) * pow(0.8, 6), 0, fade);
     pop();
   }
 
   if (millis() - startTime >= inter * 11 * 14.5 && millis() - startTime < inter * 11 * 15.5) {
-    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/6.7/inter) * pow(0.8, 7), 0, fade7);
+    draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/5.5/inter) * pow(0.8, 7), 0, fade7);
     if (fade7<=0) fadeAmount = 0;
     if (fade7>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
     fade7 += fadeAmount;
     push();
     rotate(-6 * millis()/800);
-    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/6.7/inter) * pow(0.8, 8), 180, fade);
+    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/5.5/inter) * pow(0.8, 8), 180, fade);
     pop();
     push();
     rotate(17 * millis()/800);
-    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/6.7/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/5.5/inter) * pow(0.8, 6), 0, fade);
     pop();
   }
 
   if (millis() - startTime >= inter * 11 * 15.5 && millis() - startTime < inter * 11 * 16.5) {
     push();
     rotate(-6 * millis()/800);
-    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/6.7/inter) * pow(0.8, 8), 180, fade8);
+    draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/5.5/inter) * pow(0.8, 8), 180, fade8);
     if (fade8<=0) fadeAmount = 0;
     if (fade8>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
     fade8 += fadeAmount;
     pop();
     push();
     rotate(17 * millis()/800);
-    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/6.7/inter) * pow(0.8, 6), 0, fade);
+    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/5.5/inter) * pow(0.8, 6), 0, fade);
     pop();
   }
 
   if (millis() - startTime >= inter * 11 * 16.5 && millis() - startTime < inter * 11 * 17.5) {
     push();
     rotate(17 * millis()/800);
-    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/6.7/inter) * pow(0.8, 6), 0, fade09);
+    draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/5.5/inter) * pow(0.8, 6), 0, fade09);
     if (fade09<=0) fadeAmount = 0;
     if (fade09>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
     fade09 += fadeAmount;
