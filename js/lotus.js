@@ -213,7 +213,7 @@ function draw() {
   angleMode(DEGREES);
   noStroke();
   rotate((millis()/800));
-  scale(width/1180);
+  scale(width/1440);
   let inter = 380;
   if (millis() - startTime >= inter && millis() - startTime < inter * 11) {
     draw_layer(layer6, '#010A5A', (millis()-startTime)/5.5/inter, 0, fade01);
@@ -565,7 +565,7 @@ function draw() {
   fill(c);
   circle(0,0,10);
 }else{
-  textSize(39 * width/1180);
+  textSize(39 * width/1440);
   c = color ('#0B2570');
   c.setAlpha(fade_w);
   fill(c);
