@@ -215,6 +215,7 @@ function draw() {
   rotate((millis()/800));
   scale(width/1440);
   let inter = 380;
+
   if (millis() - startTime >= inter && millis() - startTime < inter * 11) {
     draw_layer(layer6, '#010A5A', (millis()-startTime)/5.3/inter, 0, fade01);
     if (fade01 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);

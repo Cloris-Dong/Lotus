@@ -1,3 +1,15 @@
+@keyframes typing {
+  from {
+    width: 0
+  }to { width: 100% }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
 {
  box-sizing: border-box;
 }
@@ -7,6 +19,7 @@ html, body {
  padding: 0;
  background-color: #000000;
  border: none;
+ display: flex;
 }
 
 canvas {
@@ -27,6 +40,40 @@ canvas {
   align-items: center;
 }
 
+#banner button {
+  display: block;
+  margin-top: 50px;
+}
+
+.opening{
+  display: grid;
+  place-items: center;
+  margin-bottom: 50px;
+}
+
 p{
+  margin: 0;
+  padding: 0;
   color:white;
+  width：38ch;
+  animation: typing 2s steps(39), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-weight: 500;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.7em;
+  line-height: 1.7em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }to { width: 100% }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
