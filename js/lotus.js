@@ -207,8 +207,8 @@ function draw_layer(layer, c, s, deg, fade){
 
 function draw() {
   frameRate(60);
-  background ('#010102');
   if (!navigator.onLine) {
+  background ('#010102');
   translate(width/2, height/2);
   angleMode(DEGREES);
   noStroke();
