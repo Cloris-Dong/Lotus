@@ -1,3 +1,17 @@
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 801px) {
+  p {
+    font-size: 1.7em;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 800px) {
+  p {
+    font-size: 0.7em;
+  }
+}
+
 @keyframes typing {
   from {
     width: 0
@@ -61,7 +75,7 @@ canvas {
   z-index: 99999;
   width: 100vw;
   height: 100vh;
-  text-align:center;
+  text-align: center;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -97,11 +111,10 @@ p{
   animation: typing 2s steps(39), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  overflow-wrap: break-word;
   border-right: 3px solid;
   font-weight: 500;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.7em;
+  /* font-size: 1.7em; */
   line-height: 1.7em;
 }
 
