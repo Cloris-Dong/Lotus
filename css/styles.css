@@ -92,7 +92,7 @@ background: radial-gradient(circle, rgba(6,131,228,1) 2%, rgba(4,137,209,1) 9%, 
 p{
   margin: 0;
   padding: 0;
-  color:white;
+  color: white;
   width：38ch;
   animation: typing 2s steps(39), blink .5s step-end infinite alternate;
   white-space: nowrap;

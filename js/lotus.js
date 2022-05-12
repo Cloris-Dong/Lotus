@@ -1,4 +1,5 @@
 var startTime = 0;
+var duration = 0;
 var fc = 0;
 let timer = [];
 for (let i = 0; i <= 20; i ++){
@@ -36,6 +37,7 @@ const audio = document.querySelector('audio')
 button.addEventListener('click', () => {
   audio.play()
   banner.style.display = 'none'
+  duration = millis();
 })
 
 function preload(){
@@ -216,13 +218,17 @@ function draw() {
   scale(width/1440);
   let inter = 380;
 
+  if (duration != 0){
+    startTime = duration;
+  };
+
   if (millis() - startTime >= inter && millis() - startTime < inter * 11) {
     draw_layer(layer6, '#010A5A', (millis()-startTime)/5.3/inter, 0, fade01);
     if (fade01 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade01 >= 180) fadeAmount = 0;
     fade01 += fadeAmount;
-    if (startTime === 0){
-      timer[0] = millis();
+    if (duration != 0){
+      timer[0] = millis() - duration;
     }
     timer[1] = millis();
   }
@@ -232,8 +238,8 @@ function draw() {
     if (fade02 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade02 >= 180) fadeAmount = 0;
     fade02 += fadeAmount;
-    if (startTime === 0){
-      timer[2] = millis();
+    if (duration != 0){
+      timer[2] = millis() - duration;
     }
     timer[3] = millis();
   }
@@ -245,8 +251,8 @@ function draw() {
     if (fade03 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade03 >= 180) fadeAmount = 0;
     fade03 += fadeAmount;
-    if (startTime === 0){
-      timer[4] = millis();
+    if (duration != 0){
+      timer[4] = millis() - duration;
     }
     timer[5] = millis();
   }
@@ -262,8 +268,8 @@ function draw() {
     if (fade04 >= 180) fadeAmount = 0;
     fade04 += fadeAmount;
     pop();
-    if (startTime === 0){
-      timer[6] = millis();
+    if (duration != 0){
+      timer[6] = millis() - duration;
     }
     timer[7] = millis();
   }
@@ -280,8 +286,8 @@ function draw() {
     if (fade05 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade05 >= 180) fadeAmount = 0;
     fade05 += fadeAmount;
-    if (startTime === 0){
-      timer[8] = millis();
+    if (duration != 0){
+      timer[8] = millis() - duration;
     }
     timer[9] = millis();
   }
@@ -299,8 +305,8 @@ function draw() {
     if (fade06 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade06 >= 180) fadeAmount = 0;
     fade06 += fadeAmount;
-    if (startTime === 0){
-      timer[10] = millis();
+    if (duration != 0){
+      timer[10] = millis() - duration;
     }
     timer[11] = millis();
   }
@@ -319,8 +325,8 @@ function draw() {
     if (fade07 === 0) fadeAmount = 180/(inter * 11 * 0.001 * 60);
     if (fade07 >= 180) fadeAmount = 0;
     fade07 += fadeAmount;
-    if (startTime === 0){
-      timer[12] = millis();
+    if (duration != 0){
+      timer[12] = millis() - duration;
     }
     timer[13] = millis();
   }
@@ -343,8 +349,8 @@ function draw() {
     if (fade08 >= 180) fadeAmount = 0;
     fade08 += fadeAmount;
     pop();
-    if (startTime === 0){
-      timer[14] = millis();
+    if (duration != 0){
+      timer[14] = millis() - duration;
     }
     timer[15] = millis();
   }
@@ -371,8 +377,8 @@ function draw() {
     if (fade09 >= 180) fadeAmount = 0;
     fade09 += fadeAmount;
     pop();
-    if (startTime === 0){
-      timer[16] = millis();
+    if (duration != 0){
+      timer[16] = millis() - duration;
     }
     timer[17] = millis();
   }
@@ -542,6 +548,7 @@ function draw() {
 
   if (millis() - startTime >= inter * 11 * 17.5){
     startTime = millis();
+    duration = 0;
     fade1 = 180;
     fade2 = 180;
     fade3 = 180;
