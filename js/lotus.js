@@ -580,8 +580,8 @@ function draw() {
   textAlign(CENTER);
   textFont(notoSerif);
   text(word, width/2, height/2);
-  if (fade_w<130) fadeAmount = 1;
-  if (fade_w>255) fadeAmount = -10;
+  if (fade_w <= 50) fadeAmount = 1;
+  if (fade_w>250) fadeAmount = -5;
   fade_w += fadeAmount;
 }
 }
