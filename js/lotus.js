@@ -584,7 +584,7 @@ function draw() {
   if (fade_w<0) fadeAmount = 1;
   if (fade_w>255) fadeAmount = -5;
   fade_w += fadeAmount;
-  print(fade_w);
+  // print(fade_w);
   pop();
 }
 }
