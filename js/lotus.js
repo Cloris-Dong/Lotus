@@ -574,15 +574,18 @@ function draw() {
   circle(0,0,10);
 }else{
   textSize(39 * width/1440);
-  c = color ('#0B2570');
-  c.setAlpha(fade_w);
-  fill(c);
+  push();
+  c1 = color ('#0B2570');
+  c1.setAlpha(fade_w);
+  fill(c1);
   textAlign(CENTER);
   textFont(notoSerif);
   text(word, width/2, height/2);
-  if (fade_w <= 50) fadeAmount = 1;
-  if (fade_w>250) fadeAmount = -5;
+  if (fade_w<0) fadeAmount = 1;
+  if (fade_w>255) fadeAmount = -5;
   fade_w += fadeAmount;
+  print(fade_w);
+  pop();
 }
 }
 
