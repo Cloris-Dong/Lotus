@@ -79,6 +79,15 @@ canvas {
   background: linear-gradient(360deg, rgba(3,212,235,1) 0%, rgba(6,158,203,1) 10%, rgba(6,128,185,1) 18%, rgba(8,83,150,1) 30%, rgba(9,60,133,1) 45%, rgba(2,25,61,1) 69%, rgba(1,19,47,1) 78%, rgba(0,0,0,1) 100%); */
 }
 
+#breathing{
+  display: none;
+  text-align: left;
+  color: 	black;
+  font-size: 21px;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 3ch;
+  font-weight: 600;
+}
 /* #banner button {
   display: block;
   margin-top: 50px;
@@ -92,9 +101,9 @@ canvas {
 	color: #fff;
 	background: none;
 	cursor: pointer;
-	padding: 12px 34px;
+	padding: 14px 34px;
 	display: inline-block;
-	margin: 15px 30px;
+	margin: 20px 30px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	outline: none;
@@ -139,6 +148,23 @@ canvas {
 	width: 100%;
 }
 
+a:link {
+  color: hotpink;
+}
+
+/* visited link */
+a:visited {
+  color: hotpink;
+}
+
+a:hover {
+  color: rgba(56,255,180,1);
+}
+
+a:active {
+  color: rgba(56,255,180,1);
+}
+
 .opening{
   display: grid;
   place-items: center;
@@ -180,4 +206,10 @@ p{
 span{
   color: rgba(56,243,197,1);
   text-shadow: 10px 7px 21px black;
+}
+
+.b{
+  color: black;
+  text-shadow: 0px 0px 0px;
+  border-bottom: 4px double hotpink;
 }
