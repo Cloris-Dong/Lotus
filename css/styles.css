@@ -4,7 +4,7 @@
   }to { width: 100% }
 }
 
-/* @keyframes blink {
+@keyframes blink {
   50% {
     border-color: transparent
   }
@@ -14,7 +14,7 @@
  box-sizing: border-box;
 }
 
-@keyframes rainbow{
+/* @keyframes rainbow{
   0% {
     color:red;
   }
@@ -40,7 +40,7 @@
     color: white;
     filter: saturate(200%) hue-rotate(20deg);
   }
-} */
+}
 
 html, body {
  margin: 0;
