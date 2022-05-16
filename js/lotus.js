@@ -36,16 +36,6 @@ function preload(){
   myaudio = loadSound('assets/wave04 loop.mp3');
 }
 
-const banner = document.querySelector('#banner')
-const button = document.querySelector('#banner button')
-const audio = document.querySelector('audio')
-
-button.addEventListener('click', () => {
-  myaudio.play()
-  banner.style.display = 'none'
-  duration = millis();
-})
-
 function toggle_visibility(id) {
    var e = document.getElementById(id);
    if(e.style.display == 'block')
@@ -603,3 +593,13 @@ function windowResized() {
    resizeCanvas(windowWidth, windowHeight);
   }
   //this is to readjust the window when refresh is not pressed;
+
+  const banner = document.querySelector('#banner')
+  const button = document.querySelector('#banner button')
+  const audio = document.querySelector('audio')
+
+  button.addEventListener('click', () => {
+    myaudio.play()
+    banner.style.display = 'none'
+    duration = millis();
+  })
