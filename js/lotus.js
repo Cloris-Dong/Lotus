@@ -41,8 +41,8 @@ const button = document.querySelector('#banner button')
 // const audio = document.querySelector('audio')
 
 button.addEventListener('click', () => {
-  myaudio.loop()
-  banner.style.display = 'none'
+  myaudio.loop();
+  banner.style.display = 'none';
   duration = millis();
 })
 
