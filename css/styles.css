@@ -86,7 +86,7 @@ canvas {
   display: none;
   text-align: left;
   color: 	black;
-  font-size: 22px;
+  font-size: 23px;
   font-family: 'Cormorant Garamond', serif;
   line-height: 3ch;
   font-weight: 100;
@@ -95,15 +95,15 @@ canvas {
 .btn {
 	border: none;
 	font-family: inherit;
-	font-size: 23px;
+	font-size: 25px;
   font-weight: 600;
 	color: #fff;
 	background: none;
 	cursor: pointer;
-	padding: 13px 38px;
+	padding: 15px 36px;
 	display: inline-block;
-  margin-top: 7px;
-	margin-bottom: 15px;
+  margin-top: 10px;
+	margin-bottom: 17px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	outline: none;
@@ -183,7 +183,7 @@ p{
   border-right: 3px solid;
   font-weight: 500;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2vw;
+  font-size: 2.5vw;
   line-height: 1.7em;
 }
 
@@ -204,10 +204,10 @@ span{
   text-align: center;
   color: 	black;
   text-shadow: 0 0 0;
-  font-size: 26px;
+  font-size: 25px;
   font-family: 'Cormorant Garamond', serif;
   font-style: normal;
-  line-height: 3ch;
+  line-height: 2ch;
   font-weight: 500;
   margin-bottom: 7px;
 }
