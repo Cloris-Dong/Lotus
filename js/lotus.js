@@ -596,7 +596,7 @@ function windowResized() {
 
   const banner = document.querySelector('#banner')
   const button = document.querySelector('#banner button')
-  const audio = document.querySelector('audio')
+  // const audio = document.querySelector('audio')
 
   button.addEventListener('click', () => {
     myaudio.play()
