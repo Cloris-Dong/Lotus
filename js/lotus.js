@@ -33,7 +33,7 @@ let notoSerif;
 
 function preload(){
   notoSerif = loadFont('assets/Noto_Serif/NotoSerif-BoldItalic.ttf');
-  myaudio = loadSound('assets/wave04 loop.mp3');
+  myaudio = loadSound('assets/loop05_01.mp3');
 }
 
 const banner = document.querySelector('#banner')
@@ -246,6 +246,7 @@ function draw() {
       timer[2] = millis() - duration;
     }
     timer[3] = millis();
+    color('#010A5A');
   }
 
   if (millis() - startTime >= inter * 11 * 2 && millis() - startTime < inter * 11 * 3) {
@@ -597,6 +598,7 @@ function windowResized() {
    resizeCanvas(windowWidth, windowHeight);
   }
   //this is to readjust the window when refresh is not pressed;
+
 button.addEventListener('click', () => {
   myaudio.loop();
   banner.style.display = 'none';
