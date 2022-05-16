@@ -25,17 +25,23 @@ var fade07;
 var fade08;
 var fade09;
 var fade_w;
+let myaudio;
 var fadeAmount = 1;
 let myColors = ['#010A5A', '#0B2570', '#215795','#2D6FA5', '#4095C2', '#4EB2D4','#6EC7E1','#A1DEED'];
 let word = "Please disconnect from your network.";
 let notoSerif;
+
+function preload(){
+  notoSerif = loadFont('assets/Noto_Serif/NotoSerif-BoldItalic.ttf');
+  myaudio = loadSound('assets/wave04 loop.mp3');
+}
 
 const banner = document.querySelector('#banner')
 const button = document.querySelector('#banner button')
 const audio = document.querySelector('audio')
 
 button.addEventListener('click', () => {
-  audio.play()
+  myaudio.play()
   banner.style.display = 'none'
   duration = millis();
 })
@@ -46,10 +52,6 @@ function toggle_visibility(id) {
       e.style.display = 'none';
    else
       e.style.display = 'block';
-}
-
-function preload(){
-  notoSerif = loadFont('assets/Noto_Serif/NotoSerif-BoldItalic.ttf');
 }
 
 function setup() {
