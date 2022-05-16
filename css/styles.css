@@ -93,7 +93,7 @@ canvas {
   color: 	black;
   font-size: 22px;
   font-family: 'Cormorant Garamond', serif;
-  line-height: 3ch;
+  line-height: 3.5ch;
   font-weight: 100;
 }
 
@@ -212,7 +212,7 @@ span{
   font-size: 24px;
   font-family: 'Cormorant Garamond', serif;
   font-style: normal;
-  line-height: 2ch;
+  line-height: 3ch;
   font-weight: 500;
   margin-bottom: 7px;
 }
