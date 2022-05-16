@@ -27,10 +27,10 @@
 
 /* @keyframes glow {
   from {
-    text-shadow: 0 0 10px #f2f2f2, 0 0 20px #f2f2f2, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   }
   to {
-    text-shadow: 0 0 20px #f2f2f2, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
 
@@ -92,7 +92,7 @@ canvas {
   text-align: left;
   color: 	black;
   font-size: 1.8vw;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Crete Round', serif;
   line-height: 3ch;
   font-weight: 100;
 }
@@ -129,7 +129,7 @@ canvas {
 
 .btn-1 {
 	border-top: 1.1px solid #f0f0f0;
-  border-bottom: 2.5px solid #F8F8F8;
+  border-bottom: 2.5px solid #fff;
   color: #fff;
   border-radius: 50px;
 }
@@ -154,12 +154,12 @@ canvas {
 }
 
 a:link {
-  color: #f33866;
+  color: #fff;
 }
 
 /* visited link */
 a:visited {
-  color: #f33866;
+  color: #fff;
 }
 
 a:hover {
@@ -186,10 +186,13 @@ p{
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-weight: 500;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.4vw;
-  line-height: 1.7em;
+  font-weight: 100;
+  font-style:italic;
+  /* letter-spacing: .1rem; */
+  word-spacing: .25rem;
+  font-family: 'Crete Round', serif;
+  font-size: 2.3vw;
+  line-height: 1.8em;
 }
 
 span{
@@ -210,7 +213,7 @@ span{
   color: 	black;
   text-shadow: 0 0 0;
   font-size: 1.9vw;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   line-height: 3ch;
   font-weight: 500;
