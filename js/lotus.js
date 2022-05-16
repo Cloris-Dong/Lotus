@@ -599,7 +599,7 @@ function windowResized() {
   // const audio = document.querySelector('audio')
 
   button.addEventListener('click', () => {
-    myaudio.play()
+    myaudio.loop()
     banner.style.display = 'none'
     duration = millis();
   })
