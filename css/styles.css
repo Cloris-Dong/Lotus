@@ -48,6 +48,7 @@ html, body {
  background-color: #010102;
  border: none;
  display: flex;
+ cursor: url("../assets/cursor18.png"), pointer;
 }
 
 canvas {
@@ -105,7 +106,7 @@ canvas {
   font-weight: 600;
 	color: #004f98;
 	background: none;
-	cursor: url("../assets/cursor25.png"), pointer;
+	cursor: url("../assets/cursor30.png"), pointer;
 	padding: 0.7vw 1.5vw;
 	display: inline-block;
   margin-top: 8px;
@@ -119,7 +120,7 @@ canvas {
   color: #004f98;
   border-radius: 50px;
   text-shadow: 2px 3px 7px cyan;
-  cursor: url("../assets/cursor25.png"), pointer;
+  cursor: url("../assets/cursor30.png"), pointer;
 }
 
 .link{
