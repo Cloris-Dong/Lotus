@@ -103,7 +103,7 @@ canvas {
 	border: none;
 	font-family: inherit;
 	font-size: 3.3vw;
-  font-weight: 600;
+  font-weight: 700;
 	color: #004f98;
 	background: none;
 	cursor: url("../assets/cursor30.png"), pointer;
@@ -157,7 +157,7 @@ a:active {
 p{
   margin: 10px;
   padding: 0;
-  color: #e7feff;
+  color: #a1f6ff;
   width：38ch;
   animation: typing 2s steps(39), blink .5s step-end infinite alternate;
   white-space: nowrap;
@@ -173,7 +173,7 @@ p{
 }
 
 span{
-  color: #70ffff;
+  color: #00cbeb;
   text-shadow: 10px 7px 21px black;
 }
 
