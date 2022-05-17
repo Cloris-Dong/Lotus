@@ -112,14 +112,14 @@ canvas {
   margin-top: 8px;
 	margin-bottom: 1.7vw;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 1.8px;
 	position: relative;
 }
 
 .btn-1 {
   color: #004f98;
   border-radius: 50px;
-  text-shadow: 2px 3px 7px cyan;
+  text-shadow: 3px 4px 9px cyan;
   cursor: url("../assets/cursor30.png"), pointer;
 }
 
