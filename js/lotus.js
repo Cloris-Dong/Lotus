@@ -587,9 +587,8 @@ function draw() {
   textFont(notoSerif);
   text(word, width/2, height/2);
   if (fade_w<0) fadeAmount = 1;
-  if (fade_w>255) fadeAmount = -5;
+  if (fade_w>255) fadeAmount = -10;
   fade_w += fadeAmount;
-  // print(fade_w);
   pop();
 }
 }
