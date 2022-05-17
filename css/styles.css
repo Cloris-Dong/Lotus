@@ -104,7 +104,7 @@ canvas {
 	font-family: inherit;
 	font-size: 3.3vw;
   font-weight: 700;
-	color: #004f98;
+	color: #00427f;
 	background: none;
 	cursor: url("../assets/cursor30.png"), pointer;
 	padding: 0.7vw 1.5vw;
@@ -117,7 +117,7 @@ canvas {
 }
 
 .btn-1 {
-  color: #004f98;
+  color: #00427f;
   border-radius: 50px;
   text-shadow: 3px 4px 9px cyan;
   cursor: url("../assets/cursor30.png"), pointer;
