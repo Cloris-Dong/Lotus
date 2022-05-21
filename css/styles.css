@@ -13,33 +13,14 @@
   }
 }
 
-/* @keyframes rainbow{
-  0% {
-    color:red;
+@keyframes delay{
+  50%{
+    visibility: hidden;
   }
-  50% {
-    color:green;
-  }
-100%{
-  color:blue;
-  }
-} */
-
-/* @keyframes glow {
-  from {
-    text-shadow: 0 0 10px #E0FFFF, 0 0 20px #E0FFFF, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px #E0FFFF, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  100%{
+    visibility: visible;
   }
 }
-
-@keyframes flicker {
-  50% {
-    color: white;
-    filter: saturate(200%) hue-rotate(20deg);
-  }
-} */
 
 html, body {
  margin: 0;
@@ -114,20 +95,22 @@ canvas {
 	text-transform: uppercase;
 	letter-spacing: 1.8px;
 	position: relative;
-}
-
-.btn-1 {
-  color: #00427f;
   border-radius: 50px;
   text-shadow: 3px 4px 9px cyan;
-  cursor: url("../assets/cursor30.png"), pointer;
+  visibility: hidden;
+  animation: delay 8s;
+  -webkit-animation-fill-mode: forwards;
 }
 
 .link{
   font-size: 1.9vw;
   font-weight: bold;
   font-style: italic;
+  visibility: hidden;
+  animation: delay 4s;
+  -webkit-animation-fill-mode: forwards;
 }
+
 a:link {
   color: #70ffff;
 }

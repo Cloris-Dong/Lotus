@@ -33,7 +33,7 @@ let notoSerif;
 
 function preload(){
   notoSerif = loadFont('assets/Noto_Serif/NotoSerif-BoldItalic.ttf');
-  myaudio = loadSound('assets/loop05_01.mp3');
+  myaudio = loadSound('assets/loop06.mp3');
 }
 
 const banner = document.querySelector('#banner')
@@ -389,7 +389,7 @@ function draw() {
   }
 
   // transition stage
-  if (millis() - startTime >= inter * 11 * 9 && millis() - startTime < inter * 11 * 9.5) {
+  if (millis() - startTime >= inter * 11 * 9 && millis() - startTime < inter * 11 * 10) {
     draw_layer(layer6, '#010A5A', timer[0]/5.3/inter, 0, fade1);
     if (fade1<=0) fadeAmount = 0;
     if (fade1>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
@@ -413,7 +413,7 @@ function draw() {
     pop();
   }
 
-  if (millis() - startTime >= inter * 11 * 9.5 && millis() - startTime < inter * 11 * 10.5) {
+  if (millis() - startTime >= inter * 11 * 10 && millis() - startTime < inter * 11 * 11) {
     draw_layer(layer9, '#0B2570', ((timer[2]-timer[0])/5.3/inter) * 0.8, 0, fade2);
     if (fade2<=0) fadeAmount = 0;
     if (fade2>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
@@ -436,7 +436,7 @@ function draw() {
     pop();
   }
 
-  if (millis() - startTime >= inter * 11 * 10.5 && millis() - startTime < inter * 11 * 11.5) {
+  if (millis() - startTime >= inter * 11 * 11 && millis() - startTime < inter * 11 * 12) {
     draw_layer(layer10, '#215795', ((timer[4]-timer[2])/5.3/inter) * pow(0.8, 2), 180, fade3);
     if (fade3<=0) fadeAmount = 0;
     if (fade3>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
@@ -458,7 +458,7 @@ function draw() {
     pop();
   }
 
-  if (millis() - startTime >= inter * 11 * 11.5 && millis() - startTime < inter * 11 * 12.5) {
+  if (millis() - startTime >= inter * 11 * 12 && millis() - startTime < inter * 11 * 13) {
     push();
     rotate(1.25 * millis()/800);
     draw_layer(layer7, '#2D6FA5', ((timer[6]-timer[4])/5.3/inter) * pow(0.8, 3), 180, fade4);
@@ -479,7 +479,7 @@ function draw() {
     pop();
   }
 
-  if (millis() - startTime >= inter * 11 * 12.5 && millis() - startTime < inter * 11 * 13.5) {
+  if (millis() - startTime >= inter * 11 * 13 && millis() - startTime < inter * 11 * 14) {
     draw_layer(layer5, '#4095C2', ((timer[8]-timer[6])/5.3/inter) * pow(0.8, 4), 0, fade5);
     if (fade5<=0) fadeAmount = 0;
     if (fade5>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
@@ -496,7 +496,7 @@ function draw() {
     pop();
   }
 
-  if (millis() - startTime >= inter * 11 * 13.5 && millis() - startTime < inter * 11 * 14.5) {
+  if (millis() - startTime >= inter * 11 * 14 && millis() - startTime < inter * 11 * 15) {
     draw_layer(layer3, '#4EB2D4', ((timer[10]-timer[8])/5.3/inter) * pow(0.8, 6), 0, fade6);
     if (fade6<=0) fadeAmount = 0;
     if (fade6>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
@@ -512,7 +512,7 @@ function draw() {
     pop();
   }
 
-  if (millis() - startTime >= inter * 11 * 14.5 && millis() - startTime < inter * 11 * 15.5) {
+  if (millis() - startTime >= inter * 11 * 15 && millis() - startTime < inter * 11 * 16) {
     draw_layer(layer4, '#6EC7E1', ((timer[12]-timer[10])/5.3/inter) * pow(0.8, 7), 0, fade7);
     if (fade7<=0) fadeAmount = 0;
     if (fade7>0) fadeAmount = -180/(inter * 11 * 0.001 * 60);
@@ -527,7 +527,7 @@ function draw() {
     pop();
   }
 
-  if (millis() - startTime >= inter * 11 * 15.5 && millis() - startTime < inter * 11 * 16.5) {
+  if (millis() - startTime >= inter * 11 * 16 && millis() - startTime < inter * 11 * 17) {
     push();
     rotate(-6 * millis()/800);
     draw_layer(layer8, '#A1DEED', ((timer[14]-timer[12])/5.3/inter) * pow(0.8, 8), 180, fade8);
@@ -541,7 +541,7 @@ function draw() {
     pop();
   }
 
-  if (millis() - startTime >= inter * 11 * 16.5 && millis() - startTime < inter * 11 * 17.5) {
+  if (millis() - startTime >= inter * 11 * 17 && millis() - startTime < inter * 11 * 18) {
     push();
     rotate(17 * millis()/800);
     draw_layer(layer1, '#eac435', ((timer[16]-timer[14])/5.3/inter) * pow(0.8, 6), 0, fade09);
@@ -551,7 +551,7 @@ function draw() {
     pop();
   }
 
-  if (millis() - startTime >= inter * 11 * 17.5){
+  if (millis() - startTime >= inter * 11 * 18){
     startTime = millis();
     duration = 0;
     fade1 = 180;
